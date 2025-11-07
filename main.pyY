@@ -1,13 +1,11 @@
-import os 
 import  mylist
 import  myopp
 
 if __name__=='__main__' :
  print('Wellcome To Python')
- print("Please Select  Your Subject :  \n1- Class Car \n2-Class Fruits : \n3- Polimorphism : \n4- List : ")
+ print("Please Select  Your Subject :   \n1- Class Car \n2- Class Fruits\n3- Ploimorphism \n4- List")
  option  = int(input())
 
- os.system('clear')
  if  option ==1 :
   bmw = myopp.Car("BMW") ;
   bmw.message()
@@ -24,8 +22,9 @@ if __name__=='__main__' :
  
   print('-------------------------------------------------------------------------------')
  elif  option== 3 : 
-   pass
-
+  #polymorphism  class with same method
+  for  x in  (yellowbanana,greenbanana,bmw) :
+   x.message()
 #-------------------------------Lists And  Tupple And Set------------------------------
  elif option==4 :
   mylist.declareList()
